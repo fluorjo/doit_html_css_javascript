@@ -6,14 +6,19 @@
   <link rel="stylesheet" href="css/structure.css">
 </head>
 <body>
-  <div id="container">    
-    <header>
+  <div id="container">    <!--div: id나 class 사용해서 문서 구조를 만들거나 
+  스타일을 적용할 때 사용.-->
+    <header> <!--header. 주로 검색창이나 사이트 메뉴 입력-->
       <div id="logo">
         <a href="index-footer.html">
           <h1>Dream Jeju</h1>
         </a>
       </div>
-      <nav>
+      <nav> <!--네비게이션 영역/ 다른 위치나 다른 웹 문서로 연결.-->
+        <!--웹 문서의 위치의 영향을 받지 않아서 헤더, 푸터, 사이드 바 안에 포함될 수 있고
+        독립해서 사용할 수도 있다-->
+        <!--여러 네비게이션 태그를 사용할 때 각각 id 속성을 지정하면 다 다른 스타일 적용 가능-->
+
         <ul id="topMenu">
           <li><a href="#">단체 여행</a></li>
           <li><a href="#">맞춤 여행</a></li>
@@ -23,7 +28,7 @@
       </nav>
     </header>
     <main class="contents">
-      <section id="headling">
+      <section id="headling"> <!--섹션 1-->
         <h2>몸과 마음이 치유되는 섬</h2>                  
         <div class="detail"> 
           <img src="images/healing.jpg">                            
@@ -38,7 +43,7 @@
           </ul> 
         </div>
       </section>
-      <section id="activity">
+      <section id="activity"> <!--섹션2-->
         <h2>다양한 액티비티가 기다리는 섬</h2>
         <div class="detail">          
           <img src="images/activity.jpg">
@@ -48,7 +53,8 @@
         </div>
       </section>
     </main>
-    <footer>    
+    <footer>    <!--푸터 영역. 사이트 제작 정보, 저작권 정보, 연락처 등을 넣음.-->
+      <!--여기 안에는 다른 시맨틱 태그들 사용 가능-->
       <section id="bottomMenu">
         <ul>
           <li><a href="#">회사 소개</a></li>
